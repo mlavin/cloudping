@@ -17,7 +17,7 @@ Getting Started
 
 To get started running your own monitoring service you'll need a clone of
 repository, Python 2.7, and the latest
-`virtualenv <https://virtualenv.readthedocs.org/en/latest/>`_ installed.
+`virtualenv <https://virtualenv.readthedocs.org/en/latest/>`_ installed::
 
     $ git clone https://github.com/mlavin/cloudping.git
     $ cd cloudping
