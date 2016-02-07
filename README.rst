@@ -1,6 +1,12 @@
 CloudPing - AWS Hosted Uptime Monitoring
 ========================================
 
+.. image:: https://travis-ci.org/mlavin/cloudping.svg?branch=master
+    :target: https://travis-ci.org/mlavin/cloudping
+
+.. image:: https://codecov.io/github/mlavin/cloudping/coverage.svg?branch=master
+    :target: https://codecov.io/github/mlavin/cloudping?branch=master
+
 
 Overview
 --------
