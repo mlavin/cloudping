@@ -51,7 +51,7 @@ be uploaded using the AWS console selecting the following options:
 - Description: Monitor webpages using Lambda
 - Runtime: Python2.7
 - Upload Zip: ``cloundping.zip``
-- Handlder: ``cloudping.ping``
+- Handler: ``cloudping.ping``
 - Role: Basic Execution Role
 - Memory: 128 MB
 - Timeout: 10 secs
@@ -65,6 +65,7 @@ To run the script periodically you need to create a new Rule:
 
 - Event Selector: Schedule every 5 mins
 - Target
+
   - Lambda Function: CloudPing
   - Configure Input (Constant JSON text): {"domain": "example.com", "protocol": "http"}
 - Name: example_com-ping
@@ -92,6 +93,7 @@ script. For this you need a new CloudWatch Alarm:
 
 - Metric: CloudPing Errors
 - Threshold:
+
   - Name: SiteDown
   - Description: Too many site errors in the window.
   - Whenever: Errors is >= 2 for 1 consecutive period
@@ -146,6 +148,7 @@ http://aws.amazon.com/sns/pricing/
 
 - First 1 million Amazon SNS requests per month are free
 - Free deliveries
+
   - Mobile Push Notifications: 1 million
   - SMS: 100
   - Email: 1,000
